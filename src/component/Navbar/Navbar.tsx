@@ -11,8 +11,6 @@ import check from '../../image/control.png';
 import setting from '../../image/setting.png';
 const Navbar = (props: any) =>{
 
-    const {location} = props;
-
     return(
         <div>      
             <div className="search-navbar">
@@ -37,23 +35,23 @@ const Navbar = (props: any) =>{
                         </NavLink>
                     </li>
                     <li className="nav">
-                        <NavLink className="nav-link " to="/List">
+                        <NavLink className="nav-link " to="/Page-danhsachve">
                             <img src={manage} alt="" />
                             Quản lý vé
                         </NavLink>
                     </li>
                     <li className="nav">
-                        <NavLink className="nav-link" to="/Check">
+                        <NavLink className="nav-link" to="/Page-doisoatve">
                             <img src={check} alt="" />
                             Đối soát vé
                         </NavLink>
                     </li>
                     <li className="nav">
-                        <NavLink className="nav-link" to="/Setting">
+                        <NavLink className="nav-link" to="/Page-danhsachgoive">
                             <img src={setting} alt="" />
                             Cài đặt
                         </NavLink>
-                        <NavLink className="nav-link-child" to="/Pack-list">Gói dịch vụ</NavLink>
+                        <NavLink className="nav-link-child" to="/Page-danhsachgoive">Gói dịch vụ</NavLink>
                     </li>
 
                 </ul>

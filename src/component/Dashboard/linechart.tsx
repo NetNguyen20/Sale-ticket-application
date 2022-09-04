@@ -1,4 +1,4 @@
-import ApexCharts, { Props } from 'react-apexcharts';
+import ApexCharts from 'react-apexcharts';
 
 
 const options = {
@@ -30,7 +30,7 @@ const options = {
 };
 const series = [
     {
-        data: [150000000, 175000000, 190000000, 230000000, 200000000, 250000000, 195000000]
+        data: [145000000, 175000000, 185000000, 236000000, 220000000, 252000000, 196000000]
     }
 
 ];
@@ -40,17 +40,16 @@ const series = [
 function LineChart() {
   return (
     <div>
-      <div className="line-chart" >                
-                <label>Bảng thống kê theo ngày</label>
+        <div className="line-chart" >                
                 <p>Doanh thu</p>
                 <ApexCharts
                     type="area"
                     options={options}
                     series={series}
-                    width={1407}
+                    width={1527}
                     height={394.44}
                 />
-            </div>
+        </div>
     </div>
 
   );
