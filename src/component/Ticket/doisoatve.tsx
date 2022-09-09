@@ -49,6 +49,8 @@ const Doisoatve = () => {
     }
 
 
+
+
     return (
         <div>
             <div className="doisoatve">
@@ -150,7 +152,7 @@ const Doisoatve = () => {
                 <label className="tungaydoisoat">Từ ngày</label>
                 <input className="tungay-text" type="date" />
                 <label className="denngaydoisoat">Đến ngày</label>
-                <input className="denngay-text"  type="date" onChange={(e) => setSearch(e.target.value)}/>
+                <input className="denngay-text" type="date"  onChange={(e) => setSearch(e.target.value)}/>
 
                 <button className="locdoisoat">
                     Lọc
